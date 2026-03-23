@@ -1,0 +1,34 @@
+
+AquaH2 AI-SCADA Platform - Kraefegg M.O.
+Developer: Railson
+
+COMO INICIAR (sem instalacao necessaria):
+==========================================
+
+Windows:
+  Duplo clique em: INICIAR_WINDOWS.bat
+  OU abra o terminal na pasta e execute: python run.py
+
+Mac / Linux:
+  Terminal na pasta: python3 run.py
+  OU: bash INICIAR_MAC_LINUX.sh
+
+Requerimento unico: Python 3.8 ou superior
+  Verificar: python --version  (ou python3 --version)
+  Download:  https://python.org/downloads
+
+Apos iniciar, o browser abre automaticamente em:
+  http://localhost:8765
+
+Login: railson.kraefegg / AquaH2@2026
+
+ARQUIVOS:
+  run.py                 - Servidor completo (unico arquivo Python)
+  aquah2_platform.html   - Interface SCADA (automaticamente integrada)
+  aquah2_data.db         - Banco de dados SQLite (criado automaticamente)
+
+Para conectar hardware real:
+  Editar run.py, metodo Plant.tick()
+  Substituir simulacao por leituras MODBUS/OPC-UA/MQTT
+
+Suporte: Kraefegg M.O. - Developer: Railson - Rev 2.1.4

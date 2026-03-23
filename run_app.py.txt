@@ -1,0 +1,12 @@
+import os
+import webbrowser
+import time
+
+# inicia o Streamlit em segundo plano
+os.system("start cmd /k streamlit run app.py")
+
+# espera o servidor subir
+time.sleep(3)
+
+# abre navegador
+webbrowser.open("http://localhost:8501")
